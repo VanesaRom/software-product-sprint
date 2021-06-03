@@ -26,3 +26,20 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+/**
+ * Adds a random image to the page.
+ */
+function randomizeImage() {
+  // The images directory contains 10 lucky cat images, so generate a random index between
+  // 1 and 10.
+  const imageIndex = Math.floor(Math.random() * 10) + 1;
+  const imgUrl = 'images/g' + imageIndex + '.jpeg';
+
+  const imgElement = document.createElement('img');
+  imgElement.src = imgUrl;
+
+  const imageContainer = document.getElementById('random-image-container');
+  // Remove the previous image.
+  imageContainer.innerHTML = '';
+  imageContainer.appendChild(imgElement);
+}
