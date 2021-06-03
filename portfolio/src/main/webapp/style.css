@@ -24,10 +24,17 @@
   margin-top: 20px;
 }
 
-
 #greeting-container {
   margin-top: 20px;
 }
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 50%;
+}
+
 /* Menu Style */
  body{
     margin: 0px;
